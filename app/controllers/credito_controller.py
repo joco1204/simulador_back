@@ -18,8 +18,7 @@ def crear_credito():
             valor_total=data['valor_total'],
             fecha_solicitud=datetime.strptime(data['fecha_solicitud'], '%Y-%m-%d %H:%M:%S'),
             fecha_inicio_credito=datetime.strptime(data['fecha_inicio_credito'], '%Y-%m-%d'),
-            fecha_fin=datetime.strptime(data['fecha_fin'], '%Y-%m-%d'),
-            credito=data['credito'],
+            fecha_fin_credito=datetime.strptime(data['fecha_fin'], '%Y-%m-%d'),
             estado=data['estado']
         )
 
@@ -43,6 +42,9 @@ def obtener_creditos_por_cliente():
         for credito in creditos:
             result.append({
                 'id': credito.id,
+                'id_cliente': str(credito.id_cliente),
+                'id_tipo_credito': str(credito.id_tipo_credito),
+                'id_periodo_pago': str(credito.id_periodo_pago),
                 'valor_solicitud': str(credito.valor_solicitud),
                 'valor_interes': str(credito.valor_interes),
                 'valor_cuota': str(credito.valor_cuota),
@@ -50,8 +52,7 @@ def obtener_creditos_por_cliente():
                 'valor_total': str(credito.valor_total),
                 'fecha_solicitud': credito.fecha_solicitud.strftime('%Y-%m-%d %H:%M:%S'),
                 'fecha_inicio_credito': credito.fecha_inicio_credito.strftime('%Y-%m-%d'),
-                'fecha_fin': credito.fecha_fin.strftime('%Y-%m-%d'),
-                'credito': str(credito.credito),
+                'fecha_fin_credito': credito.fecha_fin.strftime('%Y-%m-%d'),
                 'estado': credito.estado
             })
 
