@@ -4,3 +4,4 @@ from .linea_moto import *
 from .tipo_documento import *
 from .clientes import *
 from .credito import *
+from .periodo_pago import *
