@@ -46,6 +46,7 @@ def obtener_creditos_por_cliente():
                 'valor_solicitud': str(credito.valor_solicitud),
                 'valor_interes': str(credito.valor_interes),
                 'valor_cuota': str(credito.valor_cuota),
+                'id_linea_moto': str(credito.id_linea_moto),
                 'valor_total': str(credito.valor_total),
                 'fecha_solicitud': credito.fecha_solicitud.strftime('%Y-%m-%d %H:%M:%S'),
                 'fecha_inicio_credito': credito.fecha_inicio_credito.strftime('%Y-%m-%d'),
