@@ -5,7 +5,7 @@ from app import db
 def crear_cliente():
     data = request.get_json()
     if not data:
-        return jsonify({"message": "No se recibieron datos"}), 400
+        return jsonify({"message": "No se recibieron datos"}), 200
 
     try:
         nuevo_cliente = Cliente(
@@ -55,4 +55,4 @@ def obtener_cliente_por_documento():
             "celular_referencia_2": cliente.celular_referencia_2
         }), 200
     else:
-        return jsonify({"message": "No se encontró registro"}), 404
+        return jsonify({"message": "No se encontró registro"}), 200

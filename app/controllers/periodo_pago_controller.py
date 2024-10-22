@@ -15,7 +15,7 @@ def get_dias_by_id(id):
     if periodo:
         return jsonify({'dias': periodo.dias}), 200
     else:
-        return jsonify({'message': 'Periodo no encontrado'}), 404
+        return jsonify({'message': 'Periodo no encontrado'}), 200
 
 def seed_periodos():
     periodos_iniciales = [

@@ -36,7 +36,7 @@ def obtener_creditos_por_cliente():
         creditos = Credito.query.filter_by(id_cliente=id_cliente).all()
 
         if not creditos:
-            return jsonify({'message': 'No se encontraron créditos para este cliente'}), 404
+            return jsonify({'message': 'No se encontraron créditos para este cliente'}), 200
 
         result = []
         for credito in creditos:
