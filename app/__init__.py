@@ -20,8 +20,9 @@ def create_app():
     from app.models.clientes import Cliente
     from app.models.credito import Credito
     from app.models.periodo_pago import PeriodoPago
-    from app.routes import tipo_credito_bp, marca_moto_bp, linea_moto_bp, tipo_documento_bp, clientes_bp, credito_bp, periodo_pago_bp
+    from app.routes import imagenes_pb, tipo_credito_bp, marca_moto_bp, linea_moto_bp, tipo_documento_bp, clientes_bp, credito_bp, periodo_pago_bp
     
+    app.register_blueprint(imagenes_pb)
     app.register_blueprint(tipo_credito_bp)
     app.register_blueprint(marca_moto_bp)
     app.register_blueprint(linea_moto_bp)
