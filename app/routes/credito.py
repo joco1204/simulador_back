@@ -3,7 +3,7 @@ from app.controllers.credito_controller import crear_credito, obtener_creditos_p
 
 credito_bp = Blueprint('credito', __name__)
 
-@credito_bp.route('/credito', methods=['POST'])
+@credito_bp.route('/credito/add', methods=['POST'])
 def registrar_credito():
     return crear_credito()
 
