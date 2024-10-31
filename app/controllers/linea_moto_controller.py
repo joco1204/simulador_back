@@ -14,12 +14,12 @@ def get_lineas_moto(id_marca):
 
 def seed_lineas_moto():
     registros_iniciales = [
-        (1, 'GIXXER 150 FI', 11300000, '/imagenes/suzuki_gixxer_150_fi.jpg'),
-        (1, 'GN 125', 8100000, '/imagenes/suzuki_gn_125.jpg'),
-        (2, 'CR4 125', 8500000, '/imagenes/akt_cr4_125.jpg'),
-        (2, 'NKD 125', 7500000, '/imagenes/akt_nkd_125.jpg'),
-        (3, 'APACHE RTR 160 2V', 12900000, '/imagenes/auteco_apache_rtr_160_2v.jpg'),
-        (3, 'TVS RAIDER 125', 10200000, '/imagenes/auteco_apache_tvs_raider_125.jpg')
+        (1, 'GIXXER 150 FI', 11300000, 'api/imagenes/suzuki_gixxer_150_fi.jpg'),
+        (1, 'GN 125', 8100000, 'api/imagenes/suzuki_gn_125.jpg'),
+        (2, 'CR4 125', 8500000, 'api/imagenes/akt_cr4_125.jpg'),
+        (2, 'NKD 125', 7500000, 'api/imagenes/akt_nkd_125.jpg'),
+        (3, 'APACHE RTR 160 2V', 12900000, 'api/imagenes/auteco_apache_rtr_160_2v.jpg'),
+        (3, 'TVS RAIDER 125', 10200000, 'api/imagenes/auteco_apache_tvs_raider_125.jpg')
     ]
 
     for id_marca, linea, precio, url_imagen in registros_iniciales:
