@@ -9,7 +9,7 @@ def crear_cliente():
 
     try:
         nuevo_cliente = Cliente(
-            id_tipo_documento=data['id_tipo_documento'],
+            id_tipo_documento=data['tipo_documento'],
             numero_documento=data['numero_documento'],
             nombres=data['nombres'],
             apellidos=data['apellidos'],
