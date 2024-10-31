@@ -4,7 +4,7 @@ from app.models.linea_moto import LineaMoto
 
 def get_lineas_moto(id_marca):
     lineas = LineaMoto.query.filter_by(id_marca_moto=id_marca).all()
-    base_url = request.host_url  # Obtener la URL base
+    base_url = request.host_url 
     return jsonify([{
         'id': l.id,
         'linea': l.linea,
