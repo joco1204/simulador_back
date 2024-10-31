@@ -7,10 +7,14 @@ def crear_credito():
     try:
         data = request.get_json()
         
+        id_linea_moto = data.get('id_linea_moto')
+        if id_linea_moto == 'undefined' or id_linea_moto is None:
+            id_linea_moto = None 
+
         nuevo_credito = Credito(
             id_cliente=data['id_cliente'],
             id_tipo_credito=data['id_tipo_credito'],
-            id_linea_moto=data.get('id_linea_moto'),
+            id_linea_moto=id_linea_moto,
             id_periodo_pago=data['id_periodo_pago'],
             valor_solicitud=data['valor_solicitud'],
             numero_cuotas=data['numero_cuotas'],
