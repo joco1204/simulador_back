@@ -1,8 +1,8 @@
 """Adaptar modelo Cliente a PostgreSQL
 
-Revision ID: 914001f25f61
+Revision ID: 08a038bcd1d4
 Revises: 
-Create Date: 2024-10-30 23:01:44.495779
+Create Date: 2024-10-31 00:30:39.770246
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '914001f25f61'
+revision = '08a038bcd1d4'
 down_revision = None
 branch_labels = None
 depends_on = None
