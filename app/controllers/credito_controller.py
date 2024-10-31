@@ -20,7 +20,7 @@ def crear_credito():
             valor_total=data['valor_total'],
             fecha_solicitud=datetime.strptime(data['fecha_solicitud'], '%Y-%m-%d'),
             fecha_inicio_credito=datetime.strptime(data['fecha_inicio_credito'], '%Y-%m-%d'),
-            fecha_fin_credito=datetime.strptime(data['fecha_fin'], '%Y-%m-%d'),
+            fecha_fin_credito=datetime.strptime(data['fecha_fin_credito'], '%Y-%m-%d'),
             estado=data['estado']
         )
 
